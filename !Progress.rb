@@ -142,13 +142,30 @@ Begin Capstone
   git push origin master
 
 
-12 - 
+#12 - Add create sessions route and controller method
+  post "/sessions" => "sessions#create"
 
+  def create
+    user = User.find_by(email: params[:email])
+    if user && user.authenticate(params[:password])
+      jwt = JWT.encode(
+      {
+       user_id: user.id, # the data to encode
+       exp: 24.hours.from_now.to_i # the expiration time
+       },
+       Rails.application.credentials.fetch(:secret_key_base), # the secret key
+       'HS256' # the encryption algorithm
+      )
+      render json: {jwt: jwt, email: user.email, user_id: user.id}, status: :created
+    else
+      render json: {}, status: :unauthorized
+    end
+  end
 
 #git save
 
   git add --all
-  git commit -m ''
+  git commit -m 'added create sessions route and controller method'
   git push origin master
 
 
