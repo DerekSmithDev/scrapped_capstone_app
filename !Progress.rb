@@ -34,7 +34,7 @@ Begin Capstone
   git commit -m 'created User model'
   git push origin master
 
-#4.a migrate User model to data base
+#4.a Double heck the migration file the migrate User model to data base
 
   rails db:migrate
 
@@ -44,6 +44,8 @@ Begin Capstone
   git commit -m 'migrated User model data base'
   git push origin master
 
+
+==============================================================================
 #5 - Update seeds file
 
   rails db:seed
