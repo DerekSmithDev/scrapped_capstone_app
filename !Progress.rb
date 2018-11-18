@@ -64,11 +64,11 @@ Begin Capstone
   git push origin master
 
 #7 - uncomment bcrypt gem
-in terminal run:
+# in terminal
 
   bundle install
 
-then
+    #then
 
   rails server
 
@@ -82,8 +82,6 @@ then
   git commit -m 'seeded the data base'
   git push origin master
 
-
-==============================================================================
 
 #9 - Add user create route and controller
 # in routes.rb
@@ -115,19 +113,15 @@ then
   git push origin master
 
 
+#10 - Set up insomnia Environments and Paths
 
+#git save
 
+  git add --all
+  git commit -m 'set-up insomnia environments & paths'
+  git push origin master
 
-#6 - Create a route that displays JSON for all the available user.
-
-
-
-#6.a - Use git to add, commit, and push your code.
-
-
-
-
-#7 - Make some routes to display JSON for individual products.
+11 - 
 
 
 
@@ -135,6 +129,24 @@ then
 
 
 
+
+
+
+
+
+
+
+
+12 - 
+13 - 
+14 - 
+15 - 
+16 - 
+17 - 
+18 - 
+19 - 
+20 - 
+==============================================================================
 #git save
 
   git add --all
@@ -143,14 +155,3 @@ then
 
 
 
-
-
-
-
-Bonus: Make a Ruby frontend script using the HTTP gem to display the results in the terminal instead of a web browser!
-7.a - Use git to add, commit, and push your code.
-
-Bonus: In your Ruby frontend script, use the tty-table gem (https://github.com/piotrmurach/tty-table) to print out the results with tables in the terminal!
-GitHub
-piotrmurach/tty-table
-A flexible and intuitive table generator. Contribute to piotrmurach/tty-table development by creating an account on GitHub.
