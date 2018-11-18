@@ -3,5 +3,11 @@ Rails.application.routes.draw do
   namespace :api do
     post"/users" => "users#create"
     post"/sessions" => "sessions#create"
+
+    # get"/tickets" => "tickets#index"
+    # post"/tickets" => "tickets#create"
+    # get"/tickets/:id" => "tickets#show"
+    # patch"/tickets/:id" => "tickets#update"
+    # delete"/tickets/:id" => "tickets#destroy"
   end
 end

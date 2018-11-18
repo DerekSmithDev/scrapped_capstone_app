@@ -209,7 +209,8 @@ Begin Capstone
     git commit -m 'add backend user authentication'
     git push origin master
 
-#Tickets
+'Need to fix tickets_controller methods'
+#Tickets 
   #1 - create tickets_controller
     rails generate controller api/tickets
 
@@ -218,38 +219,38 @@ Begin Capstone
     git commit -m 'created tickets_controller'
     git push origin master
 
-#2 - create and migrate Ticket model update seeds file with tickets & seed database
-  rails generate model Ticket event_id:integer 'price:decimal{9,2}'
-  #double check migration
-  rails db:migrate
+  #2 - create and migrate Ticket model update seeds file with tickets & seed database
+    rails generate model Ticket event_id:integer 'price:decimal{9,2}'
+    #double check migration
+    rails db:migrate
 
-  ticket = Ticket.create(event_id: 1, price: 10.00)
-  ticket = Ticket.create(event_id: 2, price: 15.00)
-  ticket = Ticket.create(event_id: 3, price: 20.00)
+    ticket = Ticket.create(event_id: 1, price: 10.00)
+    ticket = Ticket.create(event_id: 2, price: 15.00)
+    ticket = Ticket.create(event_id: 3, price: 20.00)
 
-  #stop server
-  rails db:reset
+    #stop server
+    rails db:reset
 
-  rails server
+    rails server
 
-  #git save
-  git add --all
-  git commit -m 'created & migrated Ticket model updated seeds file with tickets & seedd database'
-  git push origin master
+    #git save
+    git add --all
+    git commit -m 'created & migrated Ticket model updated seeds file with tickets & seedd database'
+    git push origin master
 
-#3 - add tickets_controller methods & association
-  belongs_to :event
-
-
+  3 - add tickets_controller methods & association
+    belongs_to :event
 
 
-  #git save
-  git add --all
-  git commit -m 'added tickets_controller methods & association'
-  git push origin master
 
 
-4 - add tickets restful routes & test
+    #git save
+    git add --all
+    git commit -m 'added tickets_controller methods & association'
+    git push origin master
+
+
+#4 - add tickets restful routes & test
     get"/tickets" => "tickets#index"
     post"/tickets" => "tickets#create"
     get"/tickets/:id" => "tickets#show"
@@ -281,8 +282,8 @@ xxx
     git commit -m 'created xxxs_controller'
     git push origin master
 
-  2 - create xxx model #
-    rails generate model Xxx column:datatype #
+  2 - create xxx model 
+    rails generate model Xxx column:datatype 
 
     #git save
     git add --all
@@ -292,8 +293,8 @@ xxx
   3 - update seeds file with xxxs & seed database
     xxx = Xxx.create(?: '??', ?: '??')
 
+    #stop server
     rails db:reset
-    rails db:seed
 
     #git save
     git add --all
