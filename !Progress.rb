@@ -44,13 +44,20 @@ Begin Capstone
   git commit -m 'migrated User model data base'
   git push origin master
 
+#6 - Update seeds file
+
+#git save
+
+  git add --all
+  git commit -m 'updated seeds file'
+  git push origin master
+
 
 ==============================================================================
-#5 - Update seeds file
+
 
   rails db:seed
 
-#5.a - Use git to add, commit, and push your code.
 
 
 
