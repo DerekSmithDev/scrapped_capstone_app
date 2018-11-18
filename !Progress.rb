@@ -121,31 +121,99 @@ Begin Capstone
   git commit -m 'set-up insomnia environments & paths'
   git push origin master
 
-11 - 
+#11 - Add jwt gem
+  #in gemfile
+    gem 'jwt'
+  
+    #stop server
+    
+    #in terminal 
+      bundle install
+      rails server
 
+  11a. Create sessions controller
 
+    rails generate controller api/sessions
 
+#git save
 
-
-
-
-
-
-
-
-
-
+  git add --all
+  git commit -m 'added jwt gem & created sessions controller'
+  git push origin master
 
 
 12 - 
+
+
+#git save
+
+  git add --all
+  git commit -m ''
+  git push origin master
+
+
 13 - 
+
+
+#git save
+
+  git add --all
+  git commit -m ''
+  git push origin master
+
 14 - 
+
+
+#git save
+
+  git add --all
+  git commit -m ''
+  git push origin master
+
 15 - 
+
+#git save
+
+  git add --all
+  git commit -m ''
+  git push origin master
+
 16 - 
+
+#git save
+
+  git add --all
+  git commit -m ''
+  git push origin master
+
 17 - 
+
+#git save
+
+  git add --all
+  git commit -m ''
+  git push origin master
+
 18 - 
+
+#git save
+
+  git add --all
+  git commit -m ''
+  git push origin master
+
 19 - 
+
+#git save
+
+  git add --all
+  git commit -m ''
+  git push origin master
+
 20 - 
+
+
+
 ==============================================================================
 #git save
 
