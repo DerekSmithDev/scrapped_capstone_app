@@ -72,8 +72,6 @@ then
 
   rails server
 
-
-==============================================================================
 #8 - Seed the data base
 
   rails db:seed
@@ -83,6 +81,40 @@ then
   git add --all
   git commit -m 'seeded the data base'
   git push origin master
+
+
+==============================================================================
+
+#9 - Add user create route and controller
+# in routes.rb
+  namespace :api do
+    post"/users" => "users#create"
+  end
+
+# in api/users_controller.rb
+  def create
+    user = User.new(
+      name: params[:name],
+      email: params[:email],
+      password: params[:password],
+      password_confirmation: params[:password_confirmation]
+    )
+
+    if user.save
+      render json: {message: 'User created successfully'}, status: :created
+    else
+      render json: {errors: user.errors.full_messages}, status: :bad_request
+    end
+  end
+
+
+#git save
+
+  git add --all
+  git commit -m 'added user create route and controller'
+  git push origin master
+
+
 
 
 
