@@ -210,36 +210,37 @@ Begin Capstone
     git push origin master
 
 #Tickets
-#1 - create tickets_controller
-  rails generate controller api/tickets
+  #1 - create tickets_controller
+    rails generate controller api/tickets
 
-  #git save
-  git add --all
-  git commit -m 'created tickets_controller'
-  git push origin master
+    #git save
+    git add --all
+    git commit -m 'created tickets_controller'
+    git push origin master
 
-#2 - create Ticket model
-  rails generate model Ticket event_id:integer price:'price:decimal{10,2}'
+#2 - create and migrate Ticket model update seeds file with tickets & seed database
+  rails generate model Ticket event_id:integer 'price:decimal{9,2}'
+  #double check migration
+  rails db:migrate
 
-  #git save
-  git add --all
-  git commit -m 'created Ticket model'
-  git push origin master
-
-#3 - update seeds file with tickets & seed database
   ticket = Ticket.create(event_id: 1, price: 10.00)
   ticket = Ticket.create(event_id: 2, price: 15.00)
   ticket = Ticket.create(event_id: 3, price: 20.00)
 
+  #stop server
+  rails db:reset
+
+  rails server
+
   #git save
   git add --all
-  git commit -m 'updated seeds file with tickets & seedd database'
+  git commit -m 'created & migrated Ticket model updated seeds file with tickets & seedd database'
   git push origin master
 
-4 - add tickets_controller methods & association
+#3 - add tickets_controller methods & association
   belongs_to :event
 
-  
+
 
 
   #git save
@@ -248,7 +249,7 @@ Begin Capstone
   git push origin master
 
 
-5 - add tickets restful routes & test
+4 - add tickets restful routes & test
     get"/tickets" => "tickets#index"
     post"/tickets" => "tickets#create"
     get"/tickets/:id" => "tickets#show"

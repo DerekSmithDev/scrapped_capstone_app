@@ -7,9 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 user = User.create(name: "peter", email: "peter@email.com", password: "password", password_confirmation: "password")
-
 user = User.create(name: "adam", email: "adam@email.com", password: "password", password_confirmation: "password")
-
 user = User.create(name: "russell", email: "russell@email.com", password: "password", password_confirmation: "password")
-
 user = User.create(name: "test", email: "test@email.com", password: "password", password_confirmation: "password")
+
+ticket = Ticket.create(event_id: 1, price: 10.00)
+ticket = Ticket.create(event_id: 2, price: 15.00)
+ticket = Ticket.create(event_id: 3, price: 20.00)
