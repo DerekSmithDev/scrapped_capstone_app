@@ -55,6 +55,16 @@ Begin Capstone
 
 ==============================================================================
 
+#6 - Update User validations in user.rb
+  has_secure_password
+  validates :email, presence: true, uniqueness: true
+
+#git save
+
+  git add --all
+  git commit -m 'updated user validations'
+  git push origin master
+
 
   rails db:seed
 
