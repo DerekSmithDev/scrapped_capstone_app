@@ -53,8 +53,6 @@ Begin Capstone
   git push origin master
 
 
-==============================================================================
-
 #6 - Update User validations in user.rb
   has_secure_password
   validates :email, presence: true, uniqueness: true
@@ -65,10 +63,26 @@ Begin Capstone
   git commit -m 'updated user validations'
   git push origin master
 
+#7 - uncomment bcrypt gem
+in terminal run:
+
+  bundle install
+
+then
+
+  rails server
+
+
+==============================================================================
+#8 - Seed the data base
 
   rails db:seed
 
+#git save
 
+  git add --all
+  git commit -m 'seeded the data base'
+  git push origin master
 
 
 
