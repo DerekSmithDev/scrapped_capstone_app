@@ -210,7 +210,7 @@ Begin Capstone
     git push origin master
 
 'Need to fix tickets_controller methods'
-#Tickets 
+##Tickets 
   #1 - create tickets_controller
     rails generate controller api/tickets
 
@@ -250,74 +250,236 @@ Begin Capstone
     git push origin master
 
 
-#4 - add tickets restful routes & test
-    get"/tickets" => "tickets#index"
-    post"/tickets" => "tickets#create"
-    get"/tickets/:id" => "tickets#show"
-    patch"/tickets/:id" => "tickets#update"
-    delete"/tickets/:id" => "tickets#destroy"
+  #4 - add tickets restful routes & test
+      get"/tickets" => "tickets#index"
+      post"/tickets" => "tickets#create"
+      get"/tickets/:id" => "tickets#show"
+      patch"/tickets/:id" => "tickets#update"
+      delete"/tickets/:id" => "tickets#destroy"
+
+      #git save
+      git add --all
+      git commit -m 'added tickets restful routes & tested successfully'
+      git push origin master
+
+Venue
+#1 - create venues_controller
+rails generate controller api/venues
+
+#git save
+git add --all
+git commit -m 'created venues_controller'
+git push origin master
+
+2 - create Venue model 
+rails generate model Venue name:string address:string city:string state:string zip:string website:string contact:string email:string phone:string capacity:integer      
+
+#git save
+git add --all
+git commit -m 'created Venue model'
+git push origin master
+
+3 - update seeds file with venues & seed database
+venue = Venue.create(name: '', address: '', city: '', state: '', zip: '', website: '', contact: '', email: '', phone: '', capacity: n)
+
+#stop server
+rails db:reset
+
+#git save
+git add --all
+git commit -m 'updated seeds file with venues & seeded database'
+git push origin master
+
+4 - add venues_controller methods & association
+
+
+#git save
+git add --all
+git commit -m 'added venues_controller methods & association'
+git push origin master
+
+
+5 - add venues restful routes & test
+get"/venues" => "venues#index"
+post"/venues" => "venues#create"
+get"/venues/:id" => "venues#show"
+patch"/venues/:id" => "venues#update"
+delete"/venues/:id" => "venues#destroy"
+
+#git save
+git add --all
+git commit -m 'added venues restful routes & tested successfully'
+git push origin master
+
+
+Orders
+  1 - create orders_controller
+  rails generate controller api/orders
 
   #git save
   git add --all
-  git commit -m 'added tickets restful routes & tested successfully'
+  git commit -m 'created orders_controller'
   git push origin master
 
+  2 - create Order model 
+  rails generate model Order user_id:integer ticket_id:integer quantity:integer 'subtotal:decimal{9,2}' 'tax:decimal{9,2}' 'total:decimal{9,2}'
+
+  #git save
+  git add --all
+  git commit -m 'created Order model'
+  git push origin master
+
+  3 - update seeds file with orders & seed database
+  order = Order.create(user_id: n, ticket_id: n, quantity: n, subtotal: n, tax: n, total: n)
+
+  #stop server
+  rails db:reset
+
+  #git save
+  git add --all
+  git commit -m 'updated seeds file with orders & seedd database'
+  git push origin master
+
+    4 - add orders_controller methods & association
 
 
+      #git save
+      git add --all
+      git commit -m 'added orders_controller methods & association'
+      git push origin master
+
+
+    5 - add orders restful routes & test
+      get"/orders" => "orders#index"
+      post"/orders" => "orders#create"
+      get"/orders/:id" => "orders#show"
+      patch"/orders/:id" => "orders#update"
+      delete"/orders/:id" => "orders#destroy"
+
+      #git save
+      git add --all
+      git commit -m 'added orders restful routes & tested successfully'
+      git push origin master
+
+
+Events
+  #1 - create events_controller
+  rails generate controller api/events
+
+  #git save
+  git add --all
+  git commit -m 'created events_controller'
+  git push origin master
+
+  2 - create Event model 
+  rails generate model Event name:string description:text user_id:integer venue_id:integer start_date:datetime end_date:datetime status:string sales:integer 
+
+  #git save
+  git add --all
+  git commit -m 'created Event model'
+  git push origin master
+
+  3 - update seeds file with events & seed database
+  event = Event.create(name: '', description: '', user_id: n, venue_id: n, start_date: n, end_date: n, status: '', sales: n)
+
+  #stop server
+  rails db:reset
+
+  #git save
+  git add --all
+  git commit -m 'updated seeds file with events & seeded database'
+  git push origin master
+
+    4 - add events_controller methods & association
+
+
+      #git save
+      git add --all
+      git commit -m 'added events_controller methods & association'
+      git push origin master
+
+
+    5 - add events restful routes & test
+      get"/events" => "events#index"
+      post"/events" => "events#create"
+      get"/events/:id" => "events#show"
+      patch"/events/:id" => "events#update"
+      delete"/events/:id" => "events#destroy"
+
+      #git save
+      git add --all
+      git commit -m 'added events restful routes & tested successfully'
+      git push origin master
 
 ==============================================================================
 #git save
-
   git add --all
   git commit -m ''
   git push origin master
 
 
-xxx
-  1 - create xxxs_controller
-    rails generate controller api/xxxs
+Zz zs
+  1 - create zs_controller
+    rails generate controller api/zs
 
     #git save
     git add --all
-    git commit -m 'created xxxs_controller'
+    git commit -m 'created zs_controller'
     git push origin master
 
-  2 - create xxx model 
-    rails generate model Xxx column:datatype 
+  2 - create Zz model 
+    rails generate model Zz column:datatype 
 
     #git save
     git add --all
-    git commit -m 'created Xxx model'
+    git commit -m 'created Zz model'
     git push origin master
 
-  3 - update seeds file with xxxs & seed database
-    xxx = Xxx.create(?: '??', ?: '??')
+  3 - update seeds file with zs & seed database
+    zz = Zz.create(?: '?', ?: '?')
 
     #stop server
     rails db:reset
 
     #git save
     git add --all
-    git commit -m 'updated seeds file with xxxs & seedd database'
+    git commit -m 'updated seeds file with zs & seeded database'
     git push origin master
 
-  4 - add xxxs_controller methods & association
+  4 - add zs_controller methods & association
 
 
     #git save
     git add --all
-    git commit -m 'added xxxs_controller methods & association'
+    git commit -m 'added zs_controller methods & association'
     git push origin master
 
 
-  5 - add xxxs restful routes & test
-    get"/xxxs" => "xxxs#index"
-    post"/xxxs" => "xxxs#create"
-    get"/xxxs/:id" => "xxxs#show"
-    patch"/xxxs/:id" => "xxxs#update"
-    delete"/xxxs/:id" => "xxxs#destroy"
+  5 - add zs restful routes & test
+    get"/zs" => "zs#index"
+    post"/zs" => "zs#create"
+    get"/zs/:id" => "zs#show"
+    patch"/zs/:id" => "zs#update"
+    delete"/zs/:id" => "zs#destroy"
 
     #git save
     git add --all
-    git commit -m 'added xxxs restful routes & tested successfully'
+    git commit -m 'added zs restful routes & tested successfully'
     git push origin master
+
+
+
+rails generate controller api/venues
+rails generate controller api/orders
+rails generate controller api/events
+
+rails generate model Order user_id:integer ticket_id:integer quantity:integer 'subtotal:decimal{9,2}' 'tax:decimal{9,2}' 'total:decimal{9,2}'
+
+rails generate model Venue name:string address:string city:string state:string zip:string website:string contact:string email:string phone:string capacity:integer
+
+rails generate model Event name:string description:text user_id:integer venue_id:integer start_date:datetime end_date:datetime status:string sales:integer
+
+venue = Venue.create(name: '', address: '', city: '', state: '', zip: '', website: '', contact: '', email: '', phone: '', capacity: ?)
+venue = Venue.create(name: '', address: '', city: '', state: '', zip: '', website: '', contact: '', email: '', phone: '', capacity: n)
+event = Event.create(name: '', description: '', user_id: n, venue_id: n, start_date: n, end_date: n, status: '', sales: n)
+order = Order.create(user_id: n, ticket_id: n, quantity: n, subtotal: n, tax: n, total: n)
