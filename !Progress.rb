@@ -263,13 +263,13 @@ Begin Capstone
       git push origin master
 
 Venue
-#1 - create venues_controller
-rails generate controller api/venues
+  #1 - create venues_controller
+    # rails generate controller api/venues
 
-#git save
-git add --all
-git commit -m 'created venues_controller'
-git push origin master
+    # #git save
+    # git add --all
+    # git commit -m 'created venues_controller'
+    # git push origin master
 
 2 - create Venue model 
 rails generate model Venue name:string address:string city:string state:string zip:string website:string contact:string email:string phone:string capacity:integer      
