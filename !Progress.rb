@@ -334,13 +334,16 @@ Orders
 # 1 - create orders_controller
   rails generate controller api/orders
 
-#git save
-git add --all
-git commit -m 'created orders_controller'
-git push origin master
+  #git save
+    git add --all
+    git commit -m 'created orders_controller'
+    git push origin master
 
-2 - create Order model 
+# 2 - create Order model 
 rails generate model Order user_id:integer ticket_id:integer quantity:integer 'subtotal:decimal{9,2}' 'tax:decimal{9,2}' 'total:decimal{9,2}'
+
+#double check migration
+rails db:migrate
 
 #git save
 git add --all
