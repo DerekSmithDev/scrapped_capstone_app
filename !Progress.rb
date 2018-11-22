@@ -210,7 +210,7 @@ Begin Capstone
     git push origin master
 
 'Need to fix tickets_controller methods'
-##Tickets 
+Tickets 
   #1 - create tickets_controller
     rails generate controller api/tickets
 
@@ -308,7 +308,7 @@ Venue
       # git commit -m 'updated seeds file with venues & seeded database'
       # git push origin master
 
-  # 4 - add venues_controller methods & association
+  4 - add venues_controller methods & association
 
 
     #git save
@@ -318,11 +318,11 @@ Venue
 
 
   #5 - add venues restful routes & test
-    get"/venues" => "venues#index"
-    post"/venues" => "venues#create"
-    get"/venues/:id" => "venues#show"
-    patch"/venues/:id" => "venues#update"
-    delete"/venues/:id" => "venues#destroy"
+    # get"/venues" => "venues#index"
+    # post"/venues" => "venues#create"
+    # get"/venues/:id" => "venues#show"
+    # patch"/venues/:id" => "venues#update"
+    # delete"/venues/:id" => "venues#destroy"
 
     #git save
     git add --all

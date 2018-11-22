@@ -9,5 +9,11 @@ Rails.application.routes.draw do
     # get"/tickets/:id" => "tickets#show"
     # patch"/tickets/:id" => "tickets#update"
     # delete"/tickets/:id" => "tickets#destroy"
+
+    # get"/venues" => "venues#index"
+    # post"/venues" => "venues#create"
+    # get"/venues/:id" => "venues#show"
+    # patch"/venues/:id" => "venues#update"
+    # delete"/venues/:id" => "venues#destroy"
   end
 end
