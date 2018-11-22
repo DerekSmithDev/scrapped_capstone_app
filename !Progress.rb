@@ -427,31 +427,31 @@ Events
     #stop server
     # rails db:reset
 
-  #git save
-  git add --all
-  git commit -m 'updated seeds file with events & seeded database'
-  git push origin master
+    #git save
+    # git add --all
+    # git commit -m 'updated seeds file with events & seeded database'
+    # git push origin master
 
-    4 - add events_controller methods & association
-
-
-      #git save
-      git add --all
-      git commit -m 'added events_controller methods & association'
-      git push origin master
+  4 - add events_controller methods & association
 
 
-    5 - add events restful routes & test
-      get"/events" => "events#index"
-      post"/events" => "events#create"
-      get"/events/:id" => "events#show"
-      patch"/events/:id" => "events#update"
-      delete"/events/:id" => "events#destroy"
+    #git save
+    git add --all
+    git commit -m 'added events_controller methods & association'
+    git push origin master
 
-      #git save
-      git add --all
-      git commit -m 'added events restful routes & tested successfully'
-      git push origin master
+
+  # 5 - add events restful routes & test
+    # get"/events" => "events#index"
+    # post"/events" => "events#create"
+    # get"/events/:id" => "events#show"
+    # patch"/events/:id" => "events#update"
+    # delete"/events/:id" => "events#destroy"
+
+    #git save
+    git add --all
+    git commit -m 'added events restful routes & tested successfully'
+    git push origin master
 
 ==============================================================================
 #git save

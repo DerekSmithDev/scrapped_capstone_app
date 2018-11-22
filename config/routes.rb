@@ -21,5 +21,11 @@ Rails.application.routes.draw do
     # get"/orders/:id" => "orders#show"
     # patch"/orders/:id" => "orders#update"
     # delete"/orders/:id" => "orders#destroy"
+
+    # get"/events" => "events#index"
+    # post"/events" => "events#create"
+    # get"/events/:id" => "events#show"
+    # patch"/events/:id" => "events#update"
+    # delete"/events/:id" => "events#destroy"
   end
 end
