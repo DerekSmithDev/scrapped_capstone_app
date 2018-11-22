@@ -15,5 +15,11 @@ Rails.application.routes.draw do
     # get"/venues/:id" => "venues#show"
     # patch"/venues/:id" => "venues#update"
     # delete"/venues/:id" => "venues#destroy"
+
+    # get"/orders" => "orders#index"
+    # post"/orders" => "orders#create"
+    # get"/orders/:id" => "orders#show"
+    # patch"/orders/:id" => "orders#update"
+    # delete"/orders/:id" => "orders#destroy"
   end
 end

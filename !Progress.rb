@@ -350,7 +350,7 @@ Orders
     # git commit -m 'created Order model'
     # git push origin master
 
-3 - update seeds file with orders & seed database
+# 3 - update seeds file with orders & seed database
   # order = Order.create(user_id: 1,  ticket_id:  1,  quantity: 1,  subtotal: 10.00, tax:  0.90,  total:  10.90)
   # order = Order.create(user_id: 2,  ticket_id:  2,  quantity: 2,  subtotal: 30.00, tax:  2.70,  total:  32.70)
   # order = Order.create(user_id: 3,  ticket_id:  3,  quantity: 3,  subtotal: 60.00, tax:  5.40,  total:  65.40)
@@ -365,26 +365,26 @@ Orders
   #stop server
   # rails db:reset
 
-#git save
-git add --all
-git commit -m 'updated seeds file with orders & seedd database'
-git push origin master
+  #git save
+    # git add --all
+    # git commit -m 'updated seeds file with orders & seedd database'
+    # git push origin master
 
 4 - add orders_controller methods & association
 
 
-#git save
-git add --all
-git commit -m 'added orders_controller methods & association'
-git push origin master
+  #git save
+  git add --all
+  git commit -m 'added orders_controller methods & association'
+  git push origin master
 
 
 5 - add orders restful routes & test
-get"/orders" => "orders#index"
-post"/orders" => "orders#create"
-get"/orders/:id" => "orders#show"
-patch"/orders/:id" => "orders#update"
-delete"/orders/:id" => "orders#destroy"
+  # get"/orders" => "orders#index"
+  # post"/orders" => "orders#create"
+  # get"/orders/:id" => "orders#show"
+  # patch"/orders/:id" => "orders#update"
+  # delete"/orders/:id" => "orders#destroy"
 
 #git save
 git add --all
