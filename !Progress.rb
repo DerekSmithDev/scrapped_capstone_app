@@ -394,20 +394,23 @@ Orders
 
 Events
   #1 - create events_controller
-  rails generate controller api/events
+    # rails generate controller api/events
 
-  #git save
-  git add --all
-  git commit -m 'created events_controller'
-  git push origin master
+    # #git save
+    # git add --all
+    # git commit -m 'created events_controller'
+    # git push origin master
 
-  2 - create Event model 
-  rails generate model Event name:string description:text user_id:integer venue_id:integer start_date:datetime end_date:datetime status:string sales:integer 
+  # 2 - create Event model 
+    rails generate model Event name:string description:text user_id:integer venue_id:integer start_date:datetime end_date:datetime status:string sales:integer 
 
-  #git save
-  git add --all
-  git commit -m 'created Event model'
-  git push origin master
+    #double check migration
+    rails db:migrate
+
+    #git save
+    git add --all
+    git commit -m 'created Event model'
+    git push origin master
 
   3 - update seeds file with events & seed database
   event = Event.create(name: '', description: '', user_id: n, venue_id: n, start_date: n, end_date: n, status: '', sales: n)
