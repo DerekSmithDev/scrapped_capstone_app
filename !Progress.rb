@@ -379,17 +379,17 @@ Orders
   git push origin master
 
 
-5 - add orders restful routes & test
-  # get"/orders" => "orders#index"
-  # post"/orders" => "orders#create"
-  # get"/orders/:id" => "orders#show"
-  # patch"/orders/:id" => "orders#update"
-  # delete"/orders/:id" => "orders#destroy"
+# 5 - add orders restful routes & test
+#   # get"/orders" => "orders#index"
+#   # post"/orders" => "orders#create"
+#   # get"/orders/:id" => "orders#show"
+#   # patch"/orders/:id" => "orders#update"
+#   # delete"/orders/:id" => "orders#destroy"
 
-#git save
-git add --all
-git commit -m 'added orders restful routes & tested successfully'
-git push origin master
+#   #git save
+#     # git add --all
+#     # git commit -m 'added orders restful routes & tested successfully'
+#     # git push origin master
 
 
 Events
