@@ -325,59 +325,59 @@ Venue
     # delete"/venues/:id" => "venues#destroy"
 
     #git save
-    git add --all
-    git commit -m 'added venues restful routes & tested successfully'
-    git push origin master
+      # git add --all
+      # git commit -m 'added venues restful routes & tested successfully'
+      # git push origin master
 
 
 Orders
-  1 - create orders_controller
+# 1 - create orders_controller
   rails generate controller api/orders
 
-  #git save
-  git add --all
-  git commit -m 'created orders_controller'
-  git push origin master
+#git save
+git add --all
+git commit -m 'created orders_controller'
+git push origin master
 
-  2 - create Order model 
-  rails generate model Order user_id:integer ticket_id:integer quantity:integer 'subtotal:decimal{9,2}' 'tax:decimal{9,2}' 'total:decimal{9,2}'
+2 - create Order model 
+rails generate model Order user_id:integer ticket_id:integer quantity:integer 'subtotal:decimal{9,2}' 'tax:decimal{9,2}' 'total:decimal{9,2}'
 
-  #git save
-  git add --all
-  git commit -m 'created Order model'
-  git push origin master
+#git save
+git add --all
+git commit -m 'created Order model'
+git push origin master
 
-  3 - update seeds file with orders & seed database
-  order = Order.create(user_id: n, ticket_id: n, quantity: n, subtotal: n, tax: n, total: n)
+3 - update seeds file with orders & seed database
+order = Order.create(user_id: n, ticket_id: n, quantity: n, subtotal: n, tax: n, total: n)
 
-  #stop server
-  rails db:reset
+#stop server
+rails db:reset
 
-  #git save
-  git add --all
-  git commit -m 'updated seeds file with orders & seedd database'
-  git push origin master
+#git save
+git add --all
+git commit -m 'updated seeds file with orders & seedd database'
+git push origin master
 
-    4 - add orders_controller methods & association
-
-
-      #git save
-      git add --all
-      git commit -m 'added orders_controller methods & association'
-      git push origin master
+4 - add orders_controller methods & association
 
 
-    5 - add orders restful routes & test
-      get"/orders" => "orders#index"
-      post"/orders" => "orders#create"
-      get"/orders/:id" => "orders#show"
-      patch"/orders/:id" => "orders#update"
-      delete"/orders/:id" => "orders#destroy"
+#git save
+git add --all
+git commit -m 'added orders_controller methods & association'
+git push origin master
 
-      #git save
-      git add --all
-      git commit -m 'added orders restful routes & tested successfully'
-      git push origin master
+
+5 - add orders restful routes & test
+get"/orders" => "orders#index"
+post"/orders" => "orders#create"
+get"/orders/:id" => "orders#show"
+patch"/orders/:id" => "orders#update"
+delete"/orders/:id" => "orders#destroy"
+
+#git save
+git add --all
+git commit -m 'added orders restful routes & tested successfully'
+git push origin master
 
 
 Events
