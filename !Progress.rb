@@ -340,21 +340,30 @@ Orders
     git push origin master
 
 # 2 - create Order model 
-rails generate model Order user_id:integer ticket_id:integer quantity:integer 'subtotal:decimal{9,2}' 'tax:decimal{9,2}' 'total:decimal{9,2}'
+  # rails generate model Order user_id:integer ticket_id:integer quantity:integer 'subtotal:decimal{9,2}' 'tax:decimal{9,2}' 'total:decimal{9,2}'
 
-#double check migration
-rails db:migrate
+  #double check migration
+    # rails db:migrate
 
-#git save
-git add --all
-git commit -m 'created Order model'
-git push origin master
+  #git save
+    # git add --all
+    # git commit -m 'created Order model'
+    # git push origin master
 
 3 - update seeds file with orders & seed database
-order = Order.create(user_id: n, ticket_id: n, quantity: n, subtotal: n, tax: n, total: n)
+  # order = Order.create(user_id: 1,  ticket_id:  1,  quantity: 1,  subtotal: 10.00, tax:  0.90,  total:  10.90)
+  # order = Order.create(user_id: 2,  ticket_id:  2,  quantity: 2,  subtotal: 30.00, tax:  2.70,  total:  32.70)
+  # order = Order.create(user_id: 3,  ticket_id:  3,  quantity: 3,  subtotal: 60.00, tax:  5.40,  total:  65.40)
+  # order = Order.create(user_id: 4,  ticket_id:  1,  quantity: 4,  subtotal: 40.00, tax:  3.60,  total:  43.60)
+  # order = Order.create(user_id: 1,  ticket_id:  2,  quantity: 5,  subtotal: 75.00, tax:  6.75, total:  81.75)
+  # order = Order.create(user_id: 2,  ticket_id:  3,  quantity: 6,  subtotal: 120.00,  tax:  10.80, total:  130.80)
+  # order = Order.create(user_id: 3,  ticket_id:  1,  quantity: 1,  subtotal: 10.00, tax:  0.90,  total:  10.90)
+  # order = Order.create(user_id: 4,  ticket_id:  2,  quantity: 2,  subtotal: 30.00, tax:  2.70,  total:  32.70)
+  # order = Order.create(user_id: 1,  ticket_id:  3,  quantity: 3,  subtotal: 60.00, tax:  5.40,  total:  65.40)
+  # order = Order.create(user_id: 2,  ticket_id:  1,  quantity: 4,  subtotal: 40.00, tax:  3.60,  total:  43.60)
 
-#stop server
-rails db:reset
+  #stop server
+  # rails db:reset
 
 #git save
 git add --all
